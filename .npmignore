@@ -1,0 +1,9 @@
+*node_modules*
+*.zip
+!dist
+**/coverage/*
+**test-report.html
+
+.DS_STORE
+.env
+.env.ts

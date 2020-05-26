@@ -1,0 +1,5 @@
+{
+    "extends": [
+        "@aerian/eslint-config-typescript"
+    ]
+}

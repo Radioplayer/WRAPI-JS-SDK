@@ -1,0 +1,45 @@
+{
+    "name": "wrapi-javascript-sdk",
+    "version": "0.0.1",
+    "description": "wrapi api service sdk for server side js",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "prepare": "npm run build",
+        "preversion": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "postversion": "git push && git push --tags",
+        "format": "prettier --write \"src/**/*.ts\" ",
+        "lint": "eslint . --fix",
+        "build": "tsc",
+        "start": "tsc-watch",
+        "test": "jest --config jestconfig.json",
+        "test-watch": "jest --config jestconfig.json --watch",
+        "docs": "typedoc --out docs/src/sdk --mode file src/Wrapi.ts --includeDeclarations  --exclude 'node_modules/**/*' --exclude 'src/lib/**/*' --exclude 'dist/**/*' --theme markdown --platform gitbook --disableSources --readme docs/src/introduction.md && prettier --write 'docs/src/sdk/**/*.md'",
+        "lint-fix": "eslint ./src/ --fix --ext=ts,js,jsx,tsx,mdx && prettier --write '*.{css,md,scss,html,json}'"
+    },
+    "repository": "git@bitbucket.org:aerian/wrapi-javascript-sdk.git",
+    "files": [
+        "dist/**/*"
+    ],
+    "author": "Gyula Soos <gyula.soos@aerian.com>",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "@aerian/eslint-config-typescript": "^7.0.0",
+        "@types/jest": "^25.2.1",
+        "@types/node": "^13.11.0",
+        "eslint": "^6.8.0",
+        "jest": "^25.2.7",
+        "prettier": "^2.0.2",
+        "ts-jest": "^25.3.1",
+        "tsc-watch": "^4.2.3",
+        "typedoc": "^0.17.3",
+        "typedoc-plugin-markdown": "^2.2.17",
+        "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "http-signature": "^1.3.4",
+        "https": "^1.0.0"
+    }
+}
