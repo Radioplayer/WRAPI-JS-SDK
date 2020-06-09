@@ -1,4 +1,4 @@
-# wrapi-javascript-sdk
+# radioplayer-wrapi-sdk
 
 # Introduction to the Radioplayer WRAPI JAVASCRIPT SDK
 

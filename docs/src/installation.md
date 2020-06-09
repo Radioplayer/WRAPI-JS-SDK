@@ -4,13 +4,13 @@ The package is intended to be run on a node application. To install it, type
 this command in a Terminal window or a command prompt:
 
 ```bash
-npm install wrapi-javascript-sdk
+npm install radioplayer-wrapi-sdk
 ```
 
 or
 
 ```bash
-yarn add wrapi-javascript-sdk
+yarn add radioplayer-wrapi-sdk
 ```
 
 ### Next:

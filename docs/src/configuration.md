@@ -5,7 +5,7 @@ configure your environment. Configuration details include your client ID and
 secret for your app and an optional wrapi endpoint override.
 
 ```javascript
-const wrapi = require("wrapi-javascript-sdk").default;
+const wrapi = require("radioplayer-wrapi-sdk").default;
 
 const wp = new wrapi({ keyId: "your key id", key: "your key" });
 ```

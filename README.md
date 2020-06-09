@@ -1,36 +1,50 @@
-# README
+## WRAPI JavaScript SDK Quick start
 
-## Install
+Before you can make calls to the WRAPI services, you first must obtain a key and
+and keyId from Radioplayer.
 
-`npm i`
+## Required setup steps
 
-## Tests
+### Radioplayer WRAPI JAVASCRIPT SDK Installation
 
-To run the tests `npm run test`
+The package is intended to be run on a node application. To install it, type
+this command in a Terminal window or a command prompt:
 
-To have all the tests working you need to obtain a wrapi wrapi pem file (plain
-or base64 encoded) and key ID and make sure you have updated the
-`__tests__/Wrapi.test.ts` file to point it at your keys.
+```bash
+npm install radioplayer-wrapi-sdk
+```
 
-## Build
+or
 
-To build `npm run build`
+```bash
+yarn add radioplayer-wrapi-sdk
+```
 
-## Deploy to NPM
+### Configuring the Radioplayer WRAPI JAVASCRIPT SDK
 
-I don't know yet - TBC
+After you install the SDK, you must make the SDK available to your app and
+configure your environment. Configuration details include your client ID and
+secret for your app and an optional wrapi endpoint override.
 
-## How to generate the docs
+```javascript
+const wrapi = require("radioplayer-wrapi-sdk").default;
 
-To update the docs (the md files) `npm run docs` To generate the docs html you
-need to have mdbook installed and then run `mdbook build` or `mdbook serve` to
-use it's built in webserver.
+const wp = new wrapi({ keyId: "your key id", key: "your key" });
+```
 
-Normally the generate books should not be part of the repo, and they would be
-generated during commits and would be deployed to netlify or to a static git
-page.
+# Configuring the Radioplayer WRAPI JAVASCRIPT SDK
 
-## How to use the SDK
+After you install the SDK, you must make the SDK available to your app and
+configure your environment. Configuration details include your client ID and
+secret for your app and an optional wrapi endpoint override.
 
-That part should be covered in the
-[documentation](https://wrapi-javascript-sdk-docs.netlify.app/).
+```javascript
+const wrapi = require("radioplayer-wrapi-sdk").default;
+
+const wp = new wrapi({ keyId: "your key id", key: "your key" });
+```
+
+### Documentation
+
+That part should be covered
+[here](https://radioplayer-wrapi-sdk-docs.netlify.app/).

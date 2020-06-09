@@ -1,4 +1,4 @@
-# wrapi-javascript-sdk
+# radioplayer-wrapi-sdk
 
 ## Index
 
